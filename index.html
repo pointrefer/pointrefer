@@ -82,7 +82,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>PointRefer Video</title>
     <style>
         /* 视频居中和调整大小 */
@@ -91,7 +91,7 @@
             justify-content: center; /* 水平居中 */
             align-items: center; /* 垂直居中 */
             flex-direction: column; /* 垂直排列文本和视频 */
-            height: 100vh; /* 视口高度 */
+            height: 80vh; /* 视口高度 */
             background-color: #f9f9f9; /* 背景颜色（可选） */
         }
 
@@ -105,7 +105,7 @@
     </style>
 </head>
 <body>
-    <section class="video-container" style="margin-top: -20px;">
+    <section class="video-container" style="margin-top: -80px;">
         <video controls>
             <source src="file/demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -173,7 +173,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-3"> <img id="painting_icon" width="4%" src="https://img.icons8.com/?size=1x&id=sei9JmRv5YVb&format=png"> Visualization on ScanRefer </h2>
+        <h2 class="title is-3" style="margin-bottom: 20px;"> <img id="painting_icon" width="4%" src="https://img.icons8.com/?size=1x&id=sei9JmRv5YVb&format=png"> Visualization on ScanRefer </h2>
         <div class="content has-text-justified">
           <p>
             Qualitative results on ScanRefer. Compared with 3D-SPS, PointRefer can distinguish the target object from similar objects, with the assistance of auxiliary object.
@@ -199,7 +199,7 @@
         <div class="content has-text-justified">
           <p>
             Failure cases on ScanRefer. The first and second columns: Failures due to ambiguous descriptions. The third column: Failures caused by complex descriptions.
-          </p>s
+          </p>
         </div>
         <img id="painting_icon" width="100%" src="file/failure_cases.PNG">
       </div>
