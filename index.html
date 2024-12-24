@@ -102,13 +102,6 @@
             border-radius: 10px; /* 圆角 */
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 阴影 */
         }
-
-        h2.subtitle {
-            margin-bottom: 20px; /* 增加标题与视频的间距 */
-            text-align: center; /* 标题居中 */
-            font-family: Arial, sans-serif; /* 字体（可选） */
-            color: #333; /* 字体颜色 */
-        }
     </style>
 </head>
 <body>
@@ -170,7 +163,7 @@
           </p>
           PointRefer is a point-based single-stage medel for 3D visual grounding. PointRefer takes a pair of scene point cloud and sentence as input. The input text is parsed into Main object and Auxiliary object components. The input point clouds are fed into a pre-trained PointNet++ network to extract the seed points $P_{seed}$. Then, we use the language-aware down-sampling module to extract keypoints $P_{main}$ and auxiliary points $P_{auxi}$ from the seed points $P_{seed}$. Finally, we use relation-aware Transformer layers to grasp inter-class relations and align keypoint features with sentence-level features to localize the referential target.
         </div>
-        <img id="painting_icon" width="100%" src="file/model.png">
+        <img id="painting_icon" width="100%" src="file/model.PNG">
       </div>
     </div>
 </section>
@@ -183,10 +176,32 @@
         <h2 class="title is-3"> <img id="painting_icon" width="4%" src="https://img.icons8.com/?size=1x&id=sei9JmRv5YVb&format=png"> Visualization on ScanRefer </h2>
         <div class="content has-text-justified">
           <p>
-            Qualitative results on ScanRefer. PointRefer can distinguish the target object from similar objects, with the assistance of auxiliary object.
+            Qualitative results on ScanRefer. Compared with 3D-SPS, PointRefer can distinguish the target object from similar objects, with the assistance of auxiliary object.
+          </p>
+        </div>
+        <img id="painting_icon" width="100%" src="file/qualititive_results_1.PNG">
+        <div class="content has-text-justified">
+          <p>
+            Qualitative results with rare object categories on ScanRefer. Compared with 3D-SPS, PointRefer has a superior understanding of spatial relationship, enabling the identification of objects with rare categories.
+          </p>
+        </div>
+        <img id="painting_icon" width="100%" src="file/qualititive_results_2.PNG">
+      </div>
+    </div>
+</section>
+
+<section class="section" >
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3"> <img id="painting_icon" width="4%" src="https://img.icons8.com/?size=1x&id=sei9JmRv5YVb&format=png"> Examples on 3DVL tasks </h2>
+        <div class="content has-text-justified">
+          <p>
+            Failure cases on ScanRefer. The first and second columns: Failures due to ambiguous descriptions. The third column: Failures caused by complex descriptions.
           </p>s
         </div>
-        <img id="painting_icon" width="100%" src="file/qualititive.png">
+        <img id="painting_icon" width="100%" src="file/failure_cases.PNG">
       </div>
     </div>
 </section>
