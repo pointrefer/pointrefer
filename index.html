@@ -68,19 +68,51 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-justified">
-        <b>TL;DR:</b> We propose a point-based single-stage method PointRefer, designed to grasp the inter-class object relations implied in the language description to distinguish the target object from similar objects of the same category.
-      </h2>
-    <video controls width="600">
-        <source src="file/demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PointRefer Video</title>
+    <style>
+        /* 视频居中和调整大小 */
+        .video-container {
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            flex-direction: column; /* 垂直排列文本和视频 */
+            height: 100vh; /* 视口高度 */
+            background-color: #f9f9f9; /* 背景颜色（可选） */
+        }
+
+        video {
+            width: 90%; /* 视频宽度占容器的 90% */
+            max-width: 800px; /* 设置最大宽度 */
+            border: 2px solid #ccc; /* 边框 */
+            border-radius: 10px; /* 圆角 */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 阴影 */
+        }
+
+        h2.subtitle {
+            margin-bottom: 20px; /* 增加标题与视频的间距 */
+            text-align: center; /* 标题居中 */
+            font-family: Arial, sans-serif; /* 字体（可选） */
+            color: #333; /* 字体颜色 */
+        }
+    </style>
+</head>
+<body>
+    <section class="video-container">
+        <h2 class="subtitle has-text-justified">
+            <b>TL;DR:</b> We propose a point-based single-stage method PointRefer, designed to grasp the inter-class object relations implied in the language description to distinguish the target object from similar objects of the same category.
+        </h2>
+        <video controls>
+            <source src="file/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+</html>
 
 <section class="section" >
   <div class="container is-max-desktop">
