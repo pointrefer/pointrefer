@@ -122,15 +122,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            3D visual grounding aims to locate a target object within point clouds based on a free-form language description. However, existing methods struggle to localize the referential target when similar objects 
-            are present. To address this challenge, we propose a point-based single-stage method PointRefer, which captures the inter-class object relations implied in the language description to distinguish 
-            the target object from similar objects. Inspired by the human perceptual system, PointRefer leverages neighboring (also referred to as auxiliary) objects to refine referential target localization and 
-            reduce interference caused by similar objects. Specifically, it decouples textual entities in the input text and learns the spatial relations between entities (i.e., the main object and auxiliary
-            objects) to accurately locate the referential target. First, we introduce a text parsing module to extract distinct textual features for the Main object and Auxiliary object components in 
-            the input text. Then, a language-aware sampling module is proposed to select a set of keypoints and auxiliary points based on the textual features of these parsed components. Next, we develop a relation-aware
-            transformer module that focuses on the target object's points. This module models the relationships between any two keypoints and auxiliary points, and then employs cross-modality attention layers to refine 
-            keypoint selection in a coarse-to-fine manner. Finally, we predict visual grounding scores and regress 3D boxes on final keypoints. Extensive experiments show that our PointRefer achieves comparable or 
-            superior performance to existing methods on both the ScanRefer and NR3D/SR3D datasets. 
+            3D visual grounding aims to locate a target object within point clouds based on a free-form language description. However, existing methods often struggle to accurately localize the referential target 
+            when multiple visually similar objects are present. To address this challenge, we propose PointRefer, a new point-based single-stage framework that captures inter-class object relations implied in 
+            language to better distinguish the target from similar objects. Inspired by human perception, PointRefer leverages the presence of neighboring (auxiliary) objects to refine localization and reduce 
+            ambiguity. Specifically, our approach decouples textual entities from the input description and learns spatial relationships between them--namely, the main object and auxiliary objects--to guide grounding. 
+            First, a text parsing module extracts disentangled features for the Main object and Auxiliary objects. Next, a language-aware sampling module selects keypoints and auxiliary points in the point cloud 
+            based on these textual cues. A relation-aware transformer module then models pairwise interactions between keypoints and auxiliary points, using cross-modality attention layers to refine keypoint 
+            selection in a coarse-to-fine manner. Finally, we predict visual grounding scores and regress 3D bounding boxes based on the refined keypoints. Extensive experiments on the ScanRefer and NR3D/SR3D 
+            datasets demonstrate that PointRefer achieves competitive or superior performance compared to state-of-the-art methods.
           </p>
         </div>
       </div>
